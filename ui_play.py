@@ -87,12 +87,17 @@ class Game:
             if self.choice == "quit":
                 sys.exit()
             while True:
-                #if self.choice.isdigit():
-                self.choice = int(self.choice)
-                if self.choice in {0, 1, -1}:
-                    break
-                print("The number is illegal, please input int number again")
-                print("If you want yo exit, please input 'quit'")
+                flag1 = 0
+                if self.choice.isdigit():
+                    flag1 = 1
+                    self.choice = int(self.choice)
+                    if self.choice in {0, 1, -1}:
+                        break
+                    print("The number is illegal, please input int number again")
+                    print("If you want yo exit, please input 'quit'")
+                if flag1 == 0:
+                    print("The number is illegal, please input int number again")
+                    print("If you want yo exit, please input 'quit'")
                 self.choice = input()
 
             if self.choice == 0:
@@ -106,7 +111,6 @@ class Game:
                     sys.exit()
                 if number == "-2":
                     flag = 1
-                #else:
                 while (flag == 0 and not number.isdigit()):
                     if number == "quit":
                         sys.exit()
@@ -165,6 +169,8 @@ class Game:
         for agent in self.agents:
             plot1,=pylab.plot(x, agent.record)
             plotlist.append(plot1)
+        pylab.xlabel('Steps(Total is 20)')
+        pylab.ylabel('The credits of every person in every step')
         pylab.legend(plotlist, namelist, loc = 'upper right', shadow = True)
         pylab.show()
 
