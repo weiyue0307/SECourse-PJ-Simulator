@@ -15,3 +15,6 @@
 	
     主运行程序在play.py文件中，运行之后，命令行串口提示用户输入  总的迭代次数T、参与者的人数n、记忆的长度m、单个策略者的策略个数s：
 ![image](https://github.com/weiyue0307/SECourse-PJ-Simulator/raw/master/Results_Picture/输入初始值.png)	
+    
+    考虑到特殊情况，如果用户输入了不符合要求的数据，系统会提示重新输入，并且可以随时退出：
+![image](https://github.com/weiyue0307/SECourse-PJ-Simulator/raw/master/Results_Picture/错误输入值&退出游戏.png)
