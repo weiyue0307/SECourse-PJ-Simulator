@@ -24,11 +24,9 @@
 ![image](https://github.com/weiyue0307/SECourse-PJ-Simulator/raw/master/Results_Picture/运行.png)
 
 用户分数（每轮每个人的分数）
-
 ![image](https://github.com/weiyue0307/SECourse-PJ-Simulator/raw/master/Results_Picture/用户分数.png)
 
-酒吧情况（每次的人数）
-    
+酒吧情况（每次的人数）    
 ![image](https://github.com/weiyue0307/SECourse-PJ-Simulator/raw/master/Results_Picture/酒吧情况.png)
 
     查看之后可以选择返回游戏（输入数字-2），随时可以输入‘quit’返回游戏。
