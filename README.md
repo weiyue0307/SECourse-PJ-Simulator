@@ -14,4 +14,4 @@
 	·策略（strategy.py）
 	
     主运行程序在play.py文件中，运行之后，命令行串口提示用户输入  总的迭代次数T、参与者的人数n、记忆的长度m、单个策略者的策略个数s：
-		
+![image](https://github.com/weiyue0307/SECourse-PJ-Simulator/raw/master/Results Picture/输入初始值.png)	
